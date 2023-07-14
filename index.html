@@ -1,0 +1,72 @@
+<!-- GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Phillips | Portfolio</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Luke Phillips | Full-Stack Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="a" id="aboutme">About Me</h1>
+            <div>
+            <p>Hello! My name is Luke. I am currently in a full stack development bootcamp and am working on my portfolio. These are three projects I have been working on and showcase my skills in HTML, CSS, and Javascript. I have included links to contact me below. I also make music for film scores and lead creative marketing. Please feel free to reach out if you have any interest or further questions!</p>
+            </div>
+        </section>
+        <section>
+            <h1 class="a"  id="work">Work</h1>
+            <div>
+
+                <article>
+                    <a href="http://lukeinco.github.io/horiseon-social-solutions/"><img id="horiseon" src="./assets/Horiseon.png" alt="Screenshot of Horiseon website"></a>
+                    <a href="http://lukeinco.github.io/desert/"><img src="./assets/desert.jpg" alt="desert"></a>
+                    <a href="http://lukeinco.github.io/finch/"><img src="./assets/finch.jpg" alt="finch"></a>
+                    <!-- <p id="bottomleft">Horiseon Social Solutions</p> -->
+                    <!-- for later update -->
+                </article>
+            </div>
+        </section>
+        <section>
+            <h1 class="a"  id="contactme">Contact Me</h1>
+            <div>
+
+                <ul>
+                    <li> <a href="mailto:lukeinco@gmail.com">E-mail</a> </li>
+                    <li> <a href="tel:+7193067860">719 - 306 - 7860</a> </li>
+                    <li> <a href="http://github.com/lukeinco">Github</a></li>
+                </ul>
+            </div>
+            </section>
+    </main>
+</body>
+
+</html>
